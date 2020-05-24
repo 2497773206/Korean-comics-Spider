@@ -54,7 +54,7 @@ class downYoumaMan():
                 img_page = img_page + 1
             dir = os.path.abspath(os.path.dirname(os.getcwd()))
             os.chdir(dir)
-
+        os.chdir('.')
     #创建文件夹函数
     def mkdir(self, path):
         path = path.strip()
@@ -74,4 +74,3 @@ for i in range(1,int(page)+1):
     #实例化
     Youma = downYoumaMan()
     Youma.getChapter(chapterUrl)
-    os.chdir('.')
