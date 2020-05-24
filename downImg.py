@@ -54,7 +54,8 @@ class downYoumaMan():
                 img_page = img_page + 1
             dir = os.path.abspath(os.path.dirname(os.getcwd()))
             os.chdir(dir)
-        os.chdir('.')
+        chapter_dir = os.path.abspath(os.path.dirname(os.getcwd()))
+        os.chdir(chapter_dir)
     #创建文件夹函数
     def mkdir(self, path):
         path = path.strip()
