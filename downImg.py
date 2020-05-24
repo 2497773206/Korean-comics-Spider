@@ -74,3 +74,4 @@ for i in range(1,int(page)+1):
     #实例化
     Youma = downYoumaMan()
     Youma.getChapter(chapterUrl)
+    os.chdir('.')
