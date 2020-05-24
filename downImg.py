@@ -46,7 +46,7 @@ class downYoumaMan():
                 imgData = requests.get(img_url,headers=header,verify=False)
                 #下载图片
                 with open(name,'wb' ) as f:
-                    #time.sleep(1)
+                    time.sleep(0.5)
                     print('正在保存' + title + '第' + str(img_page) + '张图片.')
                     f.write(imgData.content)
                 #print(name)
