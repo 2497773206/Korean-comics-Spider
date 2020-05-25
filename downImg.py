@@ -67,6 +67,7 @@ class downYoumaMan():
             return True
         else:
             print(u'名字叫做', path, u'的文件夹已经存在了！')
+            i = i + 1
             return False
 
 for i in range(1,int(page)+1):
